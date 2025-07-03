@@ -1,0 +1,93 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #002aff;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+  width: 400px;
+  height: 400px;
+  background: #000;
+  border-radius: 20px;
+  justify-items: center;
+  align-items: center;
+  padding: 10px 0 0 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.grid-item {
+  background: linear-gradient(135deg, #b3b3ff 0%, #7f7fd5 100%);
+  border-radius: 20px;
+  font-size: 2rem;
+  color: #111;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.grid-item:active {
+  background: #0e0000;
+}
+
+button[type="submit"]{
+    background: #02b317;
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.5);
+    background: #015816;
+}
+
+
+input[type="text"] {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.dial{
+  background-color: #b3b3ff;
+  padding: 25px;
+  border-radius: 150%;
+  font-size: large;
+}
+
+.dial:hover{
+    cursor: pointer;
+
+}
+
+.dial:active{
+    background-color:black;
+}

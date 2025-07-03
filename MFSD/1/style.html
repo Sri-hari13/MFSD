@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Login Page</title>
+
+    <style>
+    body {
+        background: #7babf4;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    form {
+        background: #011719;
+        padding: 32px 24px;
+        border-radius: 8px;
+        box-shadow: 0 2px 12px rgba(245, 1, 1, 0.08);
+        min-width: 320px;
+    }
+    h2 {
+        margin-top: 0;
+        margin-bottom: 24px;
+        text-align: center;
+        color: #fffbfb;
+    }
+    label {
+        display: block;
+        margin-bottom: 6px;
+        margin-inline-start: 10px;
+        color: #fdf9f9;
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 8px 10px;
+        margin-bottom: 18px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    button[type="submit"] {
+        background: linear-gradient(90deg, #ff0050, #ff7a00, #fffb00, #00ff85, #00cfff, #005eff, #ff00c8);
+        background-size: 400% 400%;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-position 0.5s ease-in-out;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    button[type="submit"]:hover {
+        background: linear-gradient(#5a9ff4, #e104b1);
+        background-position: center;
+        transition: background-position 0.5s ease-in-out;
+    }
+    
+</style>
+</head>
+
+<body>
+    <form action="/login" method="post">
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required /><br /><br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required /><br /><br />
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
+
